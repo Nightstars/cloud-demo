@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.0.7:10001/cloud_user?useSSL=false
+    username: root
+    password: Ihavenoidea@0
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: userservice #user 服务的服务名称
+mybatis:
+  type-aliases-package: cn.itcast.user.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+eureka:
+  client:
+    service-url: #eureka地址信息
+      defaultZone: http://127.0.0.1:8082/eureka
