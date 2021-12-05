@@ -6,8 +6,9 @@ spring:
     username: root
     password: Ihavenoidea@0
     driver-class-name: com.mysql.jdbc.Driver
-  application:
-    name: userservice #user 服务的服务名称
+#      discovery:
+#        cluster-name: SZ # 集群名称
+#        namespace: 09ca488c-d88b-49af-b69c-5135cc001784 # dev
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
@@ -17,7 +18,7 @@ logging:
     cn.itcast: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
-eureka:
-  client:
-    service-url: #eureka地址信息
-      defaultZone: http://127.0.0.1:8082/eureka
+#eureka:
+#  client:
+#    service-url: #eureka地址信息
+#      defaultZone: http://127.0.0.1:8082/eureka

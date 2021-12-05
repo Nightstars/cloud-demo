@@ -1,5 +1,6 @@
 package cn.itcast.order;
 
+import com.alibaba.cloud.nacos.ribbon.NacosRule;
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
 import com.netflix.loadbalancer.RoundRobinRule;
@@ -27,8 +28,8 @@ public class OrderApplication {
         return new RestTemplate();
     }
 
-   /* @Bean
-    public IRule randRule(){
-        return new RandomRule();
-    }*/
+    @Bean
+    public IRule nacosRule(){
+        return new NacosRule();
+    }
 }
