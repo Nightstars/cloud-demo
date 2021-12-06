@@ -38,14 +38,11 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
-        <!--Ribbon-->
+        <!--openfeign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-            <scope>compile</scope>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-
-
 
     </dependencies>
     <build>
